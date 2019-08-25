@@ -1,4 +1,3 @@
-/*Style for Basic-Portfolio - Homework Assignment 1*/
 *{
 	box-sizing: border-box;
 }
@@ -23,10 +22,19 @@ header{
 	background-color: white;
 	margin-bottom: 30px;
 	width: 100%;
-	overflow: auto;
+	overflow: hidden;
 	height: 75px;
 	border-bottom: 2px solid #cccccc;
 	font-family:"Georgia", "Times New Roman", Times, serif;
+}
+
+
+li {
+    color: #777777;
+    display: inline;
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    padding-right: 18px;
 }
 
 h1{
@@ -59,11 +67,12 @@ h3{
 	text-align: center;
 }
 
-p{
-	font-size: 12px;
-	line-height: 150%;
-	text-align: left;
+p {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #777777;
 }
+
 
 form{
 	line-height: 150%;
@@ -95,13 +104,12 @@ footer{
 .footer-container{
 	width: 100%;
 	height: 75px;
-	position: absolute;
-	background-color: #666666;
-	color: white;
-	border-top: 6px solid #4aaaa5;
 	bottom: 0;
 	left:0;
-	
+	position: fixed;
+	background-color: #666666;
+	color: white;
+	border-top: 8px solid #4aaaa5;
 }
 
 .menubtn{
@@ -143,8 +151,66 @@ footer{
 	
 }
 
+.portfolio{
+	float:left;
+	background-color: white;
+	border: 1px solid #dddddd;
+	overflow: auto;
+	width: 960px;
+	margin-bottom:30px;
+	padding-bottom: 10px;
+	
+}
 
-/*Contact Page Form*/
+.rowone img{
+	height: 200px;
+	width: 260px;
+}
+
+.imgleft{
+	position:relative;
+	margin: 15px;
+	margin-left: 30px;
+	float: left;
+}
+
+.imgright {
+	position:relative;
+	margin: 15px;
+	margin-left: 30px;
+	float: left;
+	padding-right: 200px;
+}
+
+.imgleft span {
+	position:absolute;
+	font-family:"Georgia", "Times New Roman", Times, serif;
+	background-color:#4aaaa5;
+	color:white;
+	padding: 15px;
+	margin: 0;
+	width: 260px;
+	text-align: center;
+	font-weight: normal;
+	bottom: 20px;
+	left: 0px;
+}
+
+.imgright span{
+	position:absolute;
+	font-family:"Georgia", "Times New Roman", Times, serif;
+	background-color:#4aaaa5;
+	color:white;
+	padding: 15px;
+	margin: 0;
+	width: 260px;
+	text-align: center;
+	font-weight: normal;
+	bottom: 20px;
+	left: 0px;
+}
+
+
 .contactbox{
 	float:left;
 	background-color: white;
@@ -185,48 +251,3 @@ footer{
 	background-color: white;
 	border: 2px solid black;
 }
-
-#portfolio{
-	float:left;
-	background-color: white;
-	border: 1px solid #dddddd;
-	overflow: auto;
-	width: 960px;
-	margin-bottom:30px;
-	padding-bottom: 10px;
-	
-}
-
-#portfolio-img{
-
-	height: 200px;
-}
-
-.imgHolder{
-	position:relative;
-	margin: 15px;
-	margin-left: 30px;
-	float: left;
-}
-
-.imgHolder-R{
-	position:relative;
-	margin: 15px;
-	margin-left: 30px;
-	float: left;
-}
-
-.imgHolder span, .imgHolder-R span{
-	position:absolute;
-	font-family:"Georgia", "Times New Roman", Times, serif;
-	background-color:#4aaaa5;
-	color:white;
-	padding: 15px;
-	margin: 0;
-	width: 266.5px;
-	text-align: center;
-	font-weight: normal;
-	bottom: 20px;
-	left: 0px;
-}
-
